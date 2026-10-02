@@ -1,4 +1,4 @@
-const exec1 = {
+const exec_2r_3c_v1_1 = {
   "number_of_robots": 2,
   "number_of_colors": 3,
   "visibility_range": 1,
@@ -11,6 +11,7 @@ const exec1 = {
   "generation_mode": {
     "ProgressiveValidationByLevels": 0
   },
+  "grids_to_test": [[7, 7]],
   "goals": [
     {
       "initial_positions": [["L", 0, 0], ["F", -1, 0]],
@@ -75,7 +76,7 @@ const exec1 = {
   ]
 };
 
-const exec2= {
+const exec_2r_2c_v2_2 = {
   "number_of_robots": 2,
   "number_of_colors": 2,
   "visibility_range": 2,
@@ -87,6 +88,7 @@ const exec2= {
   "generation_mode": {
     "ProgressiveValidationByLevels": 0
   },
+  "grids_to_test": [[13, 13]],
   "goals": [
     {
       "initial_positions": [["L", 0, 0], ["F", -1, 0]],
@@ -199,7 +201,7 @@ const exec2= {
   ]
 };
 
-const exec3 = {
+const exec_2r_2c_v2_1 = {
   "number_of_robots": 2,
   "number_of_colors": 2,
   "visibility_range": 2,
@@ -211,6 +213,7 @@ const exec3 = {
   "generation_mode": {
     "ProgressiveValidationByLevels": 0
   },
+  "grids_to_test": [[13, 13]],
   "goals": [
     {
       "initial_positions": [["L", 0, 0], ["F", -1, 0]],
@@ -323,7 +326,7 @@ const exec3 = {
   ]
 };
 
-const exec4 = {
+const exec_3r_1c_v2_1 = {
   "number_of_robots": 3,
   "number_of_colors": 1,
   "visibility_range": 2,
@@ -334,6 +337,7 @@ const exec4 = {
   "generation_mode": {
     "ProgressiveValidationByLevels": 0
   },
+  "grids_to_test": [[13, 13]],
   "goals": [
     {
       "initial_positions": [["L", 0, 1], ["L", -1, 0], ["L", 0, -1]],
@@ -440,7 +444,7 @@ const exec4 = {
   ]
 };
 
-const exec5 = {
+const exec_2r_3c_v1_3 = {
   "number_of_robots": 2,
   "number_of_colors": 3,
   "visibility_range": 1,
@@ -453,6 +457,7 @@ const exec5 = {
   "generation_mode": {
     "ProgressiveValidationByLevels": 0
   },
+  "grids_to_test": [[7, 7]],
   "goals": [
     {
       "initial_positions": [["L", 0, 0], ["F", -1, 0]],
@@ -541,7 +546,7 @@ const exec5 = {
   ]
 };
 
-const exec5_2 ={
+const exec_2r_3c_v1_8 = {
   "number_of_robots": 2,
   "number_of_colors": 3,
   "visibility_range": 1,
@@ -554,6 +559,7 @@ const exec5_2 ={
   "generation_mode": {
     "ProgressiveValidationByLevels": 0
   },
+  "grids_to_test": [[7, 7]],
   "goals": [
     {
       "initial_positions": [["L", 0, 0], ["F", -1, 0]],
@@ -631,7 +637,7 @@ const exec5_2 ={
 };
 
 
-const exec5_3 = {
+const exec_2r_3c_v1_4 = {
   "number_of_robots": 2,
   "number_of_colors": 3,
   "visibility_range": 1,
@@ -644,6 +650,7 @@ const exec5_3 = {
   "generation_mode": {
     "ProgressiveValidationByLevels": 0
   },
+  "grids_to_test": [[7, 7]],
   "goals": [
     {
       "initial_positions": [["L", 0, 0], ["F", -1, 0]],
@@ -750,7 +757,7 @@ const exec5_3 = {
   ]
 };
 
-const exec6= {
+const exec_2r_3c_v1_12 = {
   "number_of_robots": 2,
   "number_of_colors": 3,
   "visibility_range": 1,
@@ -763,6 +770,7 @@ const exec6= {
   "generation_mode": {
     "ProgressiveValidationByLevels": 0
   },
+  "grids_to_test": [[7, 7]],
   "goals": [
     {
       "initial_positions": [["L", 0, 0], ["F", -1, 0]],
@@ -869,7 +877,7 @@ const exec6= {
   ]
 };
 
-const exec7 = {
+const exec_2r_3c_v1_2 = {
   "number_of_robots": 2,
   "number_of_colors": 3,
   "visibility_range": 1,
@@ -882,6 +890,7 @@ const exec7 = {
   "generation_mode": {
     "ProgressiveValidationByLevels": 0
   },
+  "grids_to_test": [[7, 7]],
   "goals": [
     {
       "initial_positions": [["L", 0, 1], ["F", 0, 0]],
@@ -946,7 +955,7 @@ const exec7 = {
   ]
 };
 
-const exec8 = {
+const exec_2r_2c_v2_3 = {
   "number_of_robots": 2,
   "number_of_colors": 2,
   "visibility_range": 2,
@@ -958,6 +967,7 @@ const exec8 = {
   "generation_mode": {
     "ProgressiveValidationByLevels": 0
   },
+  "grids_to_test": [[13, 13]],
   "goals": [
     {
       "initial_positions": [["L", 0, 1], ["F", 0, 0]],
@@ -1082,7 +1092,7 @@ const exec8 = {
   ]
 };
 
-const exec9 = {
+const exec_2r_3c_v1_9 = {
   "number_of_robots": 2,
   "number_of_colors": 3,
   "visibility_range": 1,
@@ -1095,6 +1105,7 @@ const exec9 = {
   "generation_mode": {
     "ProgressiveValidationByLevels": 0
   },
+  "grids_to_test": [[7, 7]],
   "goals": [
     {
       "initial_positions": [["L", 0, 0], ["F", -1, 0]],
@@ -1195,6 +1206,7 @@ const exec10_unused={
   "generation_mode": {
     "ProgressiveValidationByLevels": 0
   },
+  "grids_to_test": [[7, 7]],
   "goals": [
     {
       "initial_positions": [["L", 0, 0], ["F", -1, 0]],
@@ -1253,7 +1265,7 @@ const exec10_unused={
   ]
 }
 
-const exec11 = {
+const exec_2r_3c_v1_6 = {
   "number_of_robots": 2,
   "number_of_colors": 3,
   "visibility_range": 1,
@@ -1266,6 +1278,7 @@ const exec11 = {
   "generation_mode": {
     "ProgressiveValidationByLevels": 0
   },
+  "grids_to_test": [[7, 7]],
   "goals": [
     {
       "initial_positions": [["L", 0, 0], ["F", -1, 0]],
@@ -1324,7 +1337,7 @@ const exec11 = {
   ]
 }
 
-const exec12 = {
+const exec_2r_3c_v1_7 = {
   "number_of_robots": 2,
   "number_of_colors": 3,
   "visibility_range": 1,
@@ -1337,6 +1350,7 @@ const exec12 = {
   "generation_mode": {
     "ProgressiveValidationByLevels": 0
   },
+  "grids_to_test": [[7, 7]],
   "goals": [
     {
       "initial_positions": [["L", 0, 0], ["F", -1, 0]],
@@ -1382,7 +1396,7 @@ const exec12 = {
     }
   ]
 };
-const exec13 = {
+const exec_2r_3c_v1_5 = {
   "number_of_robots": 2,
   "number_of_colors": 3,
   "visibility_range": 1,
@@ -1395,6 +1409,7 @@ const exec13 = {
   "generation_mode": {
     "ProgressiveValidationByLevels": 0
   },
+  "grids_to_test": [[7, 7]],
   "goals": [
     {
       "initial_positions": [["L", 0, 0], ["F", -1, 0]],
@@ -1500,7 +1515,7 @@ const exec13 = {
     }
   ]
 };
-const exec14 = {
+const exec_3r_1c_v2_2 = {
   "number_of_robots": 3,
   "number_of_colors": 1,
   "visibility_range": 2,
@@ -1511,6 +1526,7 @@ const exec14 = {
   "generation_mode": {
     "ProgressiveValidationByLevels": 0
   },
+  "grids_to_test": [[13, 13]],
   "goals": [
     {
       "initial_positions": [["L", 0, 0], ["L", -1, 0], ["L", -2, -1]],
@@ -1580,7 +1596,7 @@ const exec14 = {
     }
   ]
 };
-const exec15 = {
+const exec_2r_3c_v1_13 = {
   "number_of_robots": 2,
   "number_of_colors": 3,
   "visibility_range": 1,
@@ -1593,6 +1609,7 @@ const exec15 = {
   "generation_mode": {
     "ProgressiveValidationByLevels": 0
   },
+  "grids_to_test": [[7, 7]],
   "goals": [
     {
       "initial_positions": [["L", 0, 0], ["F", -1, 0]],
@@ -1699,7 +1716,7 @@ const exec15 = {
   ]
 };
 
-const exec16 = {
+const exec_2r_3c_v1_10 = {
   "number_of_robots": 2,
   "number_of_colors": 3,
   "visibility_range": 1,
@@ -1712,6 +1729,7 @@ const exec16 = {
   "generation_mode": {
     "ProgressiveValidationByLevels": 0
   },
+  "grids_to_test": [[7, 7]],
   "goals": [
     {
       "initial_positions": [["L", 0, 0], ["F", -1, 0]],
@@ -1794,7 +1812,7 @@ const exec16 = {
   ]
 };
 
-const exec17 = {
+const exec_2r_3c_v1_14 = {
   "number_of_robots": 2,
   "number_of_colors": 3,
   "visibility_range": 1,
@@ -1807,6 +1825,7 @@ const exec17 = {
   "generation_mode": {
     "ProgressiveValidationByLevels": 0
   },
+  "grids_to_test": [[7, 7]],
   "goals": [
     {
       "initial_positions": [["L", 0, 0], ["F", -1, 0]],
@@ -1888,7 +1907,7 @@ const exec17 = {
     }
   ]
 };
-const exec18 = {
+const exec_2r_3c_v1_15 = {
   "number_of_robots": 2,
   "number_of_colors": 3,
   "visibility_range": 1,
@@ -1901,6 +1920,7 @@ const exec18 = {
   "generation_mode": {
     "ProgressiveValidationByLevels": 0
   },
+  "grids_to_test": [[7, 7]],
   "goals": [
     {
       "initial_positions": [["L", 0, 0], ["F", -1, 0]],
@@ -1982,7 +2002,7 @@ const exec18 = {
     }
   ]
 };
-const exec19 = {
+const exec_2r_3c_v1_11 = {
   "number_of_robots": 2,
   "number_of_colors": 3,
   "visibility_range": 1,
@@ -1995,6 +2015,7 @@ const exec19 = {
   "generation_mode": {
     "ProgressiveValidationByLevels": 0
   },
+  "grids_to_test": [[7, 7]],
   "goals": [
     {
       "initial_positions": [["L", 0, 0], ["F", -1, 0]],
@@ -2048,98 +2069,98 @@ const algorithmPresets = [
   {
     title: "2R-3C-V1 | Ex01 ★ Algo1",
     description: "Go on a line, return on next line (base paper → Algo1).",
-    data: exec1
+    data: exec_2r_3c_v1_1
   },
   {
     title: "2R-3C-V1 | Ex02",
     description: "like {2R-3C-V1 | Ex01 ★ Algo1} strategy but with different moving patterns.",
-    data: exec7
+    data: exec_2r_3c_v1_2
   },
   {
     title: "2R-3C-V1 | Ex03",
     description: "Return same line, horizontal turn at 5th corner.",
-    data: exec5
+    data: exec_2r_3c_v1_3
   },
 
   {
     title: "2R-3C-V1 | Ex04",
     description: "Return same line, horizontal turn at corner.",
-    data: exec5_3
+    data: exec_2r_3c_v1_4
   },
   {
-    title: "2R-3C-V1 | Ec05 (Ex04.1)",
+    title: "2R-3C-V1 | Ex05 (Ex04.1)",
     description: "A variation of Ex04 with a different approach.",
-    data: exec13
+    data: exec_2r_3c_v1_5
   },
   {
     title: "2R-3C-V1 | Ex06",
     description: "A new experiment with a different approach.",
-    data: exec11
+    data: exec_2r_3c_v1_6
   },
   {
     title: "2R-3C-V1 | Ex07",
     description: "A different experiment with a unique approach.",
-    data: exec12
+    data: exec_2r_3c_v1_7
   },
 
   {
     title: "2R-3C-V1 | Ex08 (Ex03.1)",
     description: "Return next line at 1st corner.",
-    data: exec5_2
+    data: exec_2r_3c_v1_8
   },
   {
     title: "2R-3C-V1 | Ex09 (Ex04.1)",
     description: "Ex04+Ex07",
-    data: exec9
+    data: exec_2r_3c_v1_9
   },
   {
     title: "2R-3C-V1 | Ex10 | Full motif",
     description: "A new experiment with a different approach.",
-    data: exec16
+    data: exec_2r_3c_v1_10
   },
   {
     title: "2R-3C-V1 | Ex11 | Ressort",
     description: "A new experiment with a different approach.",
-    data: exec19
+    data: exec_2r_3c_v1_11
   },
   {
-    title: "2R-3C-V1 | Ex11 ⚠️ BAD V1 + 2steps",
+    title: "2R-3C-V1 | Ex12 ⚠️ BAD V1 + 2steps",
     description: "⚠️ BAD — Go line, return next line (horizontal robots format).",
-    data: exec6
+    data: exec_2r_3c_v1_12
   },
   {
-    title: "2R-3C-V1 | Ex12 ⚠️ BAD V1 +3steps",
+    title: "2R-3C-V1 | Ex13 ⚠️ BAD V1 +3steps",
     description: "⚠️ BAD — A new experiment with a different approach.",
-    data: exec15
+    data: exec_2r_3c_v1_13
   },
   {
-    title: "2R-3C-V1 | Ex13 ⚠️ BAD V2 + 2steps",
+    title: "2R-3C-V1 | Ex14 ⚠️ BAD V2 + 2steps",
     description: "⚠️ BAD — A new experiment with a different approach.",
-    data: exec17
+    data: exec_2r_3c_v1_14
   },
   {
-    title: "2R-3C-V1 | Ex14 ⚠️ BAD V2 + 3steps",
+    title: "2R-3C-V1 | Ex15 ⚠️ BAD V2 + 3steps",
     description: "⚠️ BAD — A new experiment with a different approach.",
-    data: exec18
+    data: exec_2r_3c_v1_15
   },
 
   // ═══════════════════════════════════════════════════
   //  2r-2c-v2 (2 robots · 2 colors · visibility 2)
   // ═══════════════════════════════════════════════════
-  {
+  /*{
     title: "2R-2C-V2 | Ex01 ★ Algo2",
     description: "Go on a line, return on next line (base paper → Algo2).",
-    data: exec3
+    data: exec_2r_2c_v2_1
+  },*/
+  {
+    title: "2R-2C-V2 | Ex01 ★ Algo2",
+    description: "Same as Ex01 but with complex goals.",
+    data: exec_2r_2c_v2_2
   },
   {
     title: "2R-2C-V2 | Ex02",
-    description: "Same as Ex01 but with complex goals.",
-    data: exec2
-  },
-  {
-    title: "2R-2C-V2 | Ex03",
     description: "vertical robots pattern, go on a line, return on next line",
-    data: exec8
+    data: exec_2r_2c_v2_3
   },
 
   // ═══════════════════════════════════════════════════
@@ -2148,11 +2169,11 @@ const algorithmPresets = [
   {
     title: "3R-1C-V2 | Ex01 ★ Algo3",
     description: "Go on a line, return on next line (base paper → Algo3).",
-    data: exec4
+    data: exec_3r_1c_v2_1
   },
   {
     title: "3R-1C-V2 | Ex02",
     description: "A different experiment with a unique approach.",
-    data: exec14
+    data: exec_3r_1c_v2_2
   }
 ];
