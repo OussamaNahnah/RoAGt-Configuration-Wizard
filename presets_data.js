@@ -457,7 +457,7 @@ const exec_2r_3c_v1_3 = {
   "generation_mode": {
     "ProgressiveValidationByLevels": 0
   },
-  "grids_to_test": [[7, 7]],
+  "grids_to_test": [[7,7]],
   "goals": [
     {
       "initial_positions": [["L", 0, 0], ["F", -1, 0]],
@@ -509,7 +509,7 @@ const exec_2r_3c_v1_3 = {
     },
     {
       "initial_positions": [["R", 0, 0], ["F", 1, 0]],
-      "targets": [[3, [["R", 0, 2], ["L", 0, 1]], [], []]],
+      "targets": [[2, [["R", 0, 2], ["L", 0, 1]], [], []]],
       "boundary": [-2, 2, -2, 3],
       "wall": [-1, -1]
     },
@@ -521,7 +521,7 @@ const exec_2r_3c_v1_3 = {
     },
     {
       "initial_positions": [["R", -1, 1], ["L", -1, 0]],
-      "targets": [[3, [["L", 1, 1], ["F", 0, 1]], [], []]],
+      "targets": [[2, [["L", 1, 1], ["F", 0, 1]], [], []]],
       "boundary": [-3, 2, -1, 3],
       "wall": [-2, 2]
     },
@@ -559,7 +559,7 @@ const exec_2r_3c_v1_8 = {
   "generation_mode": {
     "ProgressiveValidationByLevels": 0
   },
-  "grids_to_test": [[7, 7]],
+  "grids_to_test": [[7,7]],
   "goals": [
     {
       "initial_positions": [["L", 0, 0], ["F", -1, 0]],
@@ -593,8 +593,8 @@ const exec_2r_3c_v1_8 = {
     },
     {
       "initial_positions": [["R", 0, 0], ["F", 1, 0]],
-      "targets": [[3, [["R", 0, 2], ["L", 0, 1]], [], []]],
-      "boundary": [-6, 6, -6, 6],
+      "targets": [[2, [["R", 0, 2], ["L", 0, 1]], [], []]],
+      "boundary": [-2, 2, -2, 3],
       "wall": [-1, -1]
     },
     {
@@ -605,7 +605,7 @@ const exec_2r_3c_v1_8 = {
     },
     {
       "initial_positions": [["R", -1, 1], ["L", -1, 0]],
-      "targets": [[3, [["L", 1, 1], ["F", 0, 1]], [], []]],
+      "targets": [[2, [["L", 1, 1], ["F", 0, 1]], [], []]],
       "boundary": [-3, 2, -1, 3],
       "wall": [-2, 2]
     },
@@ -750,8 +750,8 @@ const exec_2r_3c_v1_4 = {
     },
     {
       "initial_positions": [["L", 0, 2], ["L", 0, 1]],
-      "targets": [[3, [["R", 1, 1], ["F", 1, 2]], [], []]],
-      "boundary": [-2, 3, -1, 3],
+      "targets": [[1, [["R", 1, 1], ["F", 1, 2]], [], []]],
+      "boundary": [-2, 2, -1, 3],
       "wall": [-1, null]
     }
   ]
@@ -822,8 +822,8 @@ const exec_2r_3c_v1_12 = {
     },
     {
       "initial_positions": [["R", 0, 0], ["F", 1, 0]],
-      "targets": [[3, [["R", 0, 2], ["L", 0, 1]], [], []]],
-      "boundary": [-6, 6, -6, 6],
+      "targets": [[2, [["R", 0, 2], ["L", 0, 1]], [], []]],
+      "boundary": [-2, 2, -2, 3],
       "wall": [-1, -1]
     },
     {
@@ -834,7 +834,7 @@ const exec_2r_3c_v1_12 = {
     },
     {
       "initial_positions": [["R", -1, 1], ["L", -1, 0]],
-      "targets": [[3, [["L", 1, 1], ["F", 0, 1]], [], []]],
+      "targets": [[2, [["L", 1, 1], ["F", 0, 1]], [], []]],
       "boundary": [-3, 2, -1, 3],
       "wall": [-2, 2]
     },
@@ -967,12 +967,12 @@ const exec_2r_2c_v2_3 = {
   "generation_mode": {
     "ProgressiveValidationByLevels": 0
   },
-  "grids_to_test": [[13, 13]],
+  "grids_to_test": [[13, 13], [12, 12], [11, 11]],
   "goals": [
     {
       "initial_positions": [["L", 0, 1], ["F", 0, 0]],
       "targets": [[1, [["F", 1, 0], ["L", 1, 1]], [], []]],
-      "boundary": [-2, 2, -1, 3],
+      "boundary": [-1, 2, -1, 3],
       "wall": [null, null]
     },
     {
@@ -1000,22 +1000,10 @@ const exec_2r_2c_v2_3 = {
       "wall": [null, 3]
     },
     {
-      "initial_positions": [["L", 0, 1], ["F", 0, -1]],
-      "targets": [[1, [["F", 1, -1], ["L", 1, 1]], [], []]],
-      "boundary": [-1, 2, -2, 3],
-      "wall": [null, 2]
-    },
-    {
       "initial_positions": [["L", 0, 1], ["F", 0, 0]],
       "targets": [[1, [["L", 1, 1], ["F", 1, 0]], [], []]],
       "boundary": [-1, 2, -1, 4],
       "wall": [null, 3]
-    },
-    {
-      "initial_positions": [["L", 0, 1], ["F", 0, 0]],
-      "targets": [[1, [["L", 1, 1], ["F", 1, 0]], [], []]],
-      "boundary": [-1, 2, -1, 3],
-      "wall": [null, 2]
     },
     {
       "initial_positions": [["L", 0, 1], ["F", 0, -1]],
@@ -1024,28 +1012,10 @@ const exec_2r_2c_v2_3 = {
       "wall": [null, -3]
     },
     {
-      "initial_positions": [["L", 0, 1], ["F", 0, -1]],
-      "targets": [[1, [["F", 1, -1], ["L", 1, 1]], [], []]],
-      "boundary": [-1, 2, -3, 3],
-      "wall": [null, -2]
-    },
-    {
-      "initial_positions": [["L", 0, 1], ["F", 0, 0]],
-      "targets": [[1, [["L", 1, 1], ["F", 1, 0]], [], []]],
-      "boundary": [-1, 2, -3, 2],
-      "wall": [null, -2]
-    },
-    {
       "initial_positions": [["F", 1, 2], ["L", 1, 0]],
       "targets": [[1, [["L", 0, 0], ["F", 0, 2]], [], []], [3, [["L", 2, 2], ["F", 2, 1]], [["-", 2, 0], ["-", 1, 0]], [["F", 1, 1]]]],
       "boundary": [-2, 3, -1, 5],
       "wall": [-1, 4]
-    },
-    {
-      "initial_positions": [["F", 1, 1], ["L", 1, -1]],
-      "targets": [[1, [["F", 0, 1], ["L", 0, -1]], [], []], [3, [["L", 2, 1], ["F", 2, 0]], [["-", 2, -1], ["-", 1, -1]], [["F", 1, 0]]]],
-      "boundary": [-2, 3, -2, 3],
-      "wall": [-1, 2]
     },
     {
       "initial_positions": [["F", 0, 0], ["L", 0, 1]],
@@ -1070,24 +1040,6 @@ const exec_2r_2c_v2_3 = {
       "targets": [[1, [["L", 1, 1], ["F", 1, -1]], [], []], [3, [["L", -1, -1], ["F", -1, 0]], [["-", -1, 1], ["-", 0, 1]], [["F", 0, 0]]]],
       "boundary": [-2, 3, -2, 4],
       "wall": [2, 3]
-    },
-    {
-      "initial_positions": [["L", 0, 1], ["F", 0, -1]],
-      "targets": [[1, [["L", 1, 1], ["F", 1, -1]], [], []], [3, [["L", -1, -1], ["F", -1, 0]], [["-", -1, 1], ["-", 0, 1]], [["F", 0, 0]]]],
-      "boundary": [-2, 3, -2, 3],
-      "wall": [2, 2]
-    },
-    {
-      "initial_positions": [["L", 0, 0], ["F", 0, 1]],
-      "targets": [[1, [["F", -1, 1], ["L", -1, 0]], [], []], [3, [["L", 1, 1], ["F", 1, -1]], [["-", 0, -1], ["-", -1, -1]], [["F", 0, 0]]]],
-      "boundary": [-3, 2, -2, 2],
-      "wall": [-2, 3]
-    },
-    {
-      "initial_positions": [["L", 0, 1], ["F", 0, 0]],
-      "targets": [[1, [["F", 1, 0], ["L", 1, 1]], [], []], [4, [["F", -1, 0], ["L", -2, 0]], [["-", -2, 1]], [["*", -1, 0], ["*", -1, 1]]]],
-      "boundary": [-3, 3, -1, 3],
-      "wall": [2, 2]
     }
   ]
 };
@@ -1105,7 +1057,7 @@ const exec_2r_3c_v1_9 = {
   "generation_mode": {
     "ProgressiveValidationByLevels": 0
   },
-  "grids_to_test": [[7, 7]],
+  "grids_to_test": [[7,7]],
   "goals": [
     {
       "initial_positions": [["L", 0, 0], ["F", -1, 0]],
@@ -1139,8 +1091,8 @@ const exec_2r_3c_v1_9 = {
     },
     {
       "initial_positions": [["R", 0, 0], ["F", 1, 0]],
-      "targets": [[3, [["R", 0, 2], ["L", 0, 1]], [], []]],
-      "boundary": [-2, 3, -2, 3],
+      "targets": [[2, [["R", 0, 2], ["L", 0, 1]], [], []]],
+      "boundary": [-2, 2, -2, 3],
       "wall": [-1, -1]
     },
     {
@@ -1151,7 +1103,7 @@ const exec_2r_3c_v1_9 = {
     },
     {
       "initial_positions": [["R", -1, 1], ["L", -1, 0]],
-      "targets": [[3, [["L", 1, 1], ["F", 0, 1]], [], []]],
+      "targets": [[2, [["L", 1, 1], ["F", 0, 1]], [], []]],
       "boundary": [-3, 2, -1, 3],
       "wall": [-2, 2]
     },
@@ -1187,7 +1139,7 @@ const exec_2r_3c_v1_9 = {
     },
     {
       "initial_positions": [["L", 0, 2], ["L", 0, 1]],
-      "targets": [[3, [["R", 1, 1], ["F", 1, 2]], [], []]],
+      "targets": [[1, [["R", 1, 1], ["F", 1, 2]], [], []]],
       "boundary": [-2, 2, -1, 3],
       "wall": [-1, null]
     }
@@ -1409,7 +1361,7 @@ const exec_2r_3c_v1_5 = {
   "generation_mode": {
     "ProgressiveValidationByLevels": 0
   },
-  "grids_to_test": [[7, 7]],
+  "grids_to_test": [[7,7]],
   "goals": [
     {
       "initial_positions": [["L", 0, 0], ["F", -1, 0]],
@@ -1461,8 +1413,8 @@ const exec_2r_3c_v1_5 = {
     },
     {
       "initial_positions": [["R", 0, 0], ["F", 1, 0]],
-      "targets": [[3, [["R", 0, 2], ["L", 0, 1]], [], []]],
-      "boundary": [-6, 6, -6, 6],
+      "targets": [[2, [["R", 0, 2], ["L", 0, 1]], [], []]],
+      "boundary": [-2, 2, -2, 3],
       "wall": [-1, -1]
     },
     {
@@ -1479,39 +1431,9 @@ const exec_2r_3c_v1_5 = {
     },
     {
       "initial_positions": [["L", 0, 0], ["F", -1, 0]],
-      "targets": [[1, [["L", 1, 0], ["F", 0, 0]], [], []]],
-      "boundary": [-2, 2, -1, 2],
-      "wall": [null, 1]
-    },
-    {
-      "initial_positions": [["L", 0, 0], ["F", -1, 0]],
       "targets": [[3, [["F", -1, 0], ["R", -2, 0]], [], []]],
       "boundary": [-3, 2, -3, 1],
       "wall": [1, -2]
-    },
-    {
-      "initial_positions": [["L", 1, 0], ["F", 0, 0]],
-      "targets": [[3, [["R", -1, 0], ["R", 0, 0]], [], []]],
-      "boundary": [-2, 3, -2, 2],
-      "wall": [2, 1]
-    },
-    {
-      "initial_positions": [["R", 0, 0], ["R", 1, 0]],
-      "targets": [[1, [["R", -1, 0], ["R", 0, 0]], [], []]],
-      "boundary": [-2, 2, -1, 2],
-      "wall": [null, 1]
-    },
-    {
-      "initial_positions": [["R", 0, 0], ["R", 1, 0]],
-      "targets": [[3, [["L", 0, -1], ["L", 0, -2]], [], []]],
-      "boundary": [-2, 2, -3, 2],
-      "wall": [-1, 1]
-    },
-    {
-      "initial_positions": [["L", 0, 2], ["L", 0, 1]],
-      "targets": [[3, [["R", 1, 1], ["F", 1, 2]], [], []]],
-      "boundary": [-2, 3, -1, 3],
-      "wall": [-1, null]
     }
   ]
 };
@@ -1609,7 +1531,7 @@ const exec_2r_3c_v1_13 = {
   "generation_mode": {
     "ProgressiveValidationByLevels": 0
   },
-  "grids_to_test": [[7, 7]],
+  "grids_to_test": [[7,7]],
   "goals": [
     {
       "initial_positions": [["L", 0, 0], ["F", -1, 0]],
@@ -1661,8 +1583,8 @@ const exec_2r_3c_v1_13 = {
     },
     {
       "initial_positions": [["R", 0, 0], ["F", 1, 0]],
-      "targets": [[3, [["R", 0, 2], ["L", 0, 1]], [], []]],
-      "boundary": [-6, 6, -6, 6],
+      "targets": [[2, [["R", 0, 2], ["L", 0, 1]], [], []]],
+      "boundary": [-2, 2, -2, 3],
       "wall": [-1, -1]
     },
     {
@@ -1673,7 +1595,7 @@ const exec_2r_3c_v1_13 = {
     },
     {
       "initial_positions": [["R", -1, 1], ["L", -1, 0]],
-      "targets": [[3, [["L", 1, 1], ["F", 0, 1]], [], []]],
+      "targets": [[2, [["L", 1, 1], ["F", 0, 1]], [], []]],
       "boundary": [-3, 2, -1, 3],
       "wall": [-2, 2]
     },
@@ -1703,7 +1625,7 @@ const exec_2r_3c_v1_13 = {
     },
     {
       "initial_positions": [["R", 0, 0], ["R", 1, 0]],
-      "targets": [[4, [["F", 0, -3], ["F", 0, -2]], [], []]],
+      "targets": [[3, [["F", 0, -3], ["F", 0, -2]], [], []]],
       "boundary": [-2, 2, -4, 2],
       "wall": [-1, 1]
     },
@@ -1781,7 +1703,7 @@ const exec_2r_3c_v1_10 = {
     },
     {
       "initial_positions": [["R", 0, 0], ["F", 0, -1]],
-      "targets": [[3, [["R", 2, 0], ["L", 1, 0]], [], []]],
+      "targets": [[2, [["R", 2, 0], ["L", 1, 0]], [], []]],
       "boundary": [-2, 3, -2, 2],
       "wall": [-1, 1]
     },
@@ -1877,8 +1799,8 @@ const exec_2r_3c_v1_14 = {
     },
     {
       "initial_positions": [["R", 0, 0], ["F", 1, 0]],
-      "targets": [[3, [["R", 0, 2], ["L", 0, 1]], [], []]],
-      "boundary": [-6, 6, -6, 6],
+      "targets": [[2, [["R", 0, 2], ["L", 0, 1]], [], []]],
+      "boundary": [-2, 2, -2, 3],
       "wall": [-1, -1]
     },
     {
@@ -1902,7 +1824,7 @@ const exec_2r_3c_v1_14 = {
     {
       "initial_positions": [["F", 0, 1], ["F", 0, 2]],
       "targets": [[2, [["F", 1, 1], ["R", 2, 1]], [], []]],
-      "boundary": [-6, 5, 0, 3],
+      "boundary": [-2, 3, 0, 3],
       "wall": [-1, null]
     }
   ]
@@ -1972,8 +1894,8 @@ const exec_2r_3c_v1_15 = {
     },
     {
       "initial_positions": [["R", 0, 0], ["F", 1, 0]],
-      "targets": [[3, [["R", 0, 2], ["L", 0, 1]], [], []]],
-      "boundary": [-6, 6, -6, 6],
+      "targets": [[2, [["R", 0, 2], ["L", 0, 1]], [], []]],
+      "boundary": [-2, 2, -2, 3],
       "wall": [-1, -1]
     },
     {
