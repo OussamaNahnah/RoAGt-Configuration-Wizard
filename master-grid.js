@@ -16,8 +16,8 @@
   let currentWall = { x: null, y: null }; // absolute wall coords on master grid
   let initialized = false;
   let animating = false; // true while a step animation is running
-  let skipAnim  = false; // set true mid-animation to snap to end
-  let ctx_anim  = null;  // canvas context reused by animation helpers
+  let skipAnim = false; // set true mid-animation to snap to end
+  let ctx_anim = null;  // canvas context reused by animation helpers
   let pendingGoalBox = null; // { corners, goalIndex } of the NEXT matching goal, drawn persistently after each step
   let history = [];           // ring-buffer of up to 100 previous robot snapshots
   const HISTORY_MAX = 100;
@@ -28,7 +28,7 @@
   let trajectories = [];  // [{goalIndex, segments:[{fx,fy,tx,ty}]}] — one entry per applied step
   let showAutomaton = false;   // show goal-transition automaton diagram
   let automatonCache = null;   // [{from,to}] — invalidated when goals change
-  let activeGoalIdx  = -1;     // currently highlighted node in automaton
+  let activeGoalIdx = -1;     // currently highlighted node in automaton
 
   // --- Coordinate helpers ---
   function worldToCanvas(x, y) {
@@ -37,7 +37,7 @@
 
   function isWithinBoundary(x, y) {
     return x >= boundary.xmin && x <= boundary.xmax &&
-           y >= boundary.ymin && y <= boundary.ymax;
+      y >= boundary.ymin && y <= boundary.ymax;
   }
 
   // --- Drawing ---
@@ -177,9 +177,9 @@
 
   // --- Trail / trajectory drawing ---
   const TRAIL_COLORS = [
-    '#1565c0','#2e7d32','#e65100','#6a1b9a',
-    '#00838f','#c62828','#4527a0','#558b2f',
-    '#f57f17','#37474f',
+    '#1565c0', '#2e7d32', '#e65100', '#6a1b9a',
+    '#00838f', '#c62828', '#4527a0', '#558b2f',
+    '#f57f17', '#37474f',
   ];
 
   // Draw accumulated movement lines.
@@ -187,7 +187,7 @@
   function drawTrajectories(ctx, newestAlpha) {
     trajectories.forEach((traj, ti) => {
       const isNewest = ti === trajectories.length - 1;
-      const alpha    = isNewest ? newestAlpha : 0.55;
+      const alpha = isNewest ? newestAlpha : 0.55;
       if (alpha <= 0) return;
       const color = TRAIL_COLORS[traj.goalIndex % TRAIL_COLORS.length];
       traj.segments.forEach(({ fx, fy, tx, ty }) => {
@@ -203,7 +203,7 @@
         ctx.beginPath(); ctx.moveTo(p1.cx, p1.cy); ctx.lineTo(p2.cx, p2.cy); ctx.stroke();
         // Arrowhead at destination
         ctx.globalAlpha = alpha;
-        const ang  = Math.atan2(p2.cy - p1.cy, p2.cx - p1.cx);
+        const ang = Math.atan2(p2.cy - p1.cy, p2.cx - p1.cx);
         const aLen = 9, aWid = 0.38;
         ctx.fillStyle = color;
         ctx.beginPath();
@@ -272,7 +272,7 @@
     for (let i = 1; i < points.length; i++) {
       const p1 = points[i - 1], p2 = points[i];
       if (Math.abs(p2.cx - p1.cx) < 1 && Math.abs(p2.cy - p1.cy) < 1) continue; // no movement
-      const ang  = Math.atan2(p2.cy - p1.cy, p2.cx - p1.cx);
+      const ang = Math.atan2(p2.cy - p1.cy, p2.cx - p1.cx);
       // Place arrowhead at midpoint so it doesn't overlap the robot dot
       const mx = (p1.cx + p2.cx) / 2, my = (p1.cy + p2.cy) / 2;
       const aLen = 8, aWid = 0.42;
@@ -307,9 +307,9 @@
   function animateStep(from, to, goalIndex, currentGoalBox) {
     const canvas = document.getElementById('movement-grid-canvas');
     if (!canvas) { render(); return; }
-    ctx_anim  = canvas.getContext('2d');
+    ctx_anim = canvas.getContext('2d');
     animating = true;
-    skipAnim  = false;
+    skipAnim = false;
     const start = performance.now();
 
     function frame(now) {
@@ -338,7 +338,7 @@
         requestAnimationFrame(frame);
       } else {
         animating = false;
-        skipAnim  = false;
+        skipAnim = false;
         render(); // render() will draw pendingGoalBox (next goal)
       }
     }
@@ -355,7 +355,7 @@
 
     if (config.walls) {
       config.walls.forEach(wall => {
-        if (wall.type === "vertical")   wallX = wall.x1;
+        if (wall.type === "vertical") wallX = wall.x1;
         if (wall.type === "horizontal") wallY = wall.y1;
       });
     }
@@ -368,7 +368,7 @@
 
     if (firstGrid.length > 0) {
       const xs = firstGrid.map(([, x]) => x);
-      const ys = firstGrid.map(([,, y]) => y);
+      const ys = firstGrid.map(([, , y]) => y);
       const groupCx = (Math.min(...xs) + Math.max(...xs)) / 2;
       const groupCy = (Math.min(...ys) + Math.max(...ys)) / 2;
 
@@ -404,21 +404,21 @@
   // --- Rotation helpers (matches Rust rotate_point / rotate_walls) ---
   function rotatePoint(x, y, angle) {
     switch (angle) {
-      case 0:   return [x,  y];
-      case 90:  return [y, -x];
+      case 0: return [x, y];
+      case 90: return [y, -x];
       case 180: return [-x, -y];
-      case 270: return [-y,  x];
-      default:  return [x,  y];
+      case 270: return [-y, x];
+      default: return [x, y];
     }
   }
 
   function rotateWalls(xWall, yWall, angle) {
     switch (angle) {
-      case 0:   return [xWall, yWall];
-      case 90:  return [yWall, xWall !== null ? -xWall : null];
+      case 0: return [xWall, yWall];
+      case 90: return [yWall, xWall !== null ? -xWall : null];
       case 180: return [xWall !== null ? -xWall : null, yWall !== null ? -yWall : null];
       case 270: return [yWall !== null ? -yWall : null, xWall];
-      default:  return [xWall, yWall];
+      default: return [xWall, yWall];
     }
   }
 
@@ -471,7 +471,7 @@
       let x = null, y = null;
       if (config.walls) {
         config.walls.forEach(w => {
-          if (w.type === 'vertical')   x = w.x1;
+          if (w.type === 'vertical') x = w.x1;
           if (w.type === 'horizontal') y = w.y1;
         });
       }
@@ -496,14 +496,14 @@
       currentScore = wallScore;
 
       const startPos = config.grids[0] || [];
-      const endPos   = config.grids[config.grids.length - 1] || [];
+      const endPos = config.grids[config.grids.length - 1] || [];
       if (startPos.length === 0 || endPos.length === 0) continue;
       if (startPos.length !== robots.length) continue;
 
       let goalXWall = null, goalYWall = null;
       if (config.walls) {
         config.walls.forEach(wall => {
-          if (wall.type === 'vertical')   goalXWall = wall.x1;
+          if (wall.type === 'vertical') goalXWall = wall.x1;
           if (wall.type === 'horizontal') goalYWall = wall.y1;
         });
       }
@@ -518,36 +518,55 @@
         for (let ruleRefIdx = 0; ruleRefIdx < startPos.length; ruleRefIdx++) {
           const [, ruleRefX, ruleRefY] = startPos[ruleRefIdx];
           const adjStart = startPos.map(([c, x, y]) => [c, x - ruleRefX, y - ruleRefY]);
-          const adjEnd   = endPos.map(([c, x, y])   => [c, x - ruleRefX, y - ruleRefY]);
+          const adjEnd = endPos.map(([c, x, y]) => [c, x - ruleRefX, y - ruleRefY]);
           const gXWallAdj = goalXWall !== null ? goalXWall - ruleRefX : null;
           const gYWallAdj = goalYWall !== null ? goalYWall - ruleRefY : null;
 
           for (const angle of [0, 90, 180, 270]) {
             const rotStart = adjStart.map(([c, x, y]) => { const [rx, ry] = rotatePoint(x, y, angle); return [c, rx, ry]; });
-            const rotEnd   = adjEnd.map(([c, x, y])   => { const [rx, ry] = rotatePoint(x, y, angle); return [c, rx, ry]; });
+            const rotEnd = adjEnd.map(([c, x, y]) => { const [rx, ry] = rotatePoint(x, y, angle); return [c, rx, ry]; });
             const [rotGoalXWall, rotGoalYWall] = rotateWalls(gXWallAdj, gYWallAdj, angle);
 
             // Wall check: if the goal requires a wall, its absolute position on the
             // master grid (refX + relative wall) must coincide with a boundary edge.
-            // No visibility / proximity needed — purely geometric.
+            // If the goal does NOT require a wall, ensure NO robot sees a wall on that axis.
+            const vis = parseInt(document.getElementById('visibility_range')?.value) || 1;
+            
             let xWallOk = true;
             if (rotGoalXWall !== null) {
               const abs = refX + rotGoalXWall;
               xWallOk = (abs === boundary.xmin || abs === boundary.xmax);
+            } else {
+              for (const robot of robots) {
+                const rx = robot[1];
+                if (rx - boundary.xmin <= vis || boundary.xmax - rx <= vis) {
+                  xWallOk = false;
+                  break;
+                }
+              }
             }
+            
             let yWallOk = true;
             if (rotGoalYWall !== null) {
               const abs = refY + rotGoalYWall;
               yWallOk = (abs === boundary.ymin || abs === boundary.ymax);
+            } else {
+              for (const robot of robots) {
+                const ry = robot[2];
+                if (ry - boundary.ymin <= vis || boundary.ymax - ry <= vis) {
+                  yWallOk = false;
+                  break;
+                }
+              }
             }
             if (!xWallOk || !yWallOk) continue;
 
             const posMatch = matchPositions(adjCurrent, rotStart);
             console.log(
               `  Goal${gi + 1} ruleRef=${ruleRefIdx} ${angle}° wallScore=${wallScore}` +
-              ` walls:${xWallOk&&yWallOk?'✓':'✗'}` +
+              ` walls:${xWallOk && yWallOk ? '✓' : '✗'}` +
               ` | cur=[${fmtRobots(adjCurrent)}] vs goal=[${fmtRobots(rotStart)}]` +
-              ` | pos:${posMatch?'✓ MATCH':'✗'}`
+              ` | pos:${posMatch ? '✓ MATCH' : '✗'}`
             );
             if (!posMatch) continue;
 
@@ -614,7 +633,7 @@
   // Highlight the goal frame in the simulator column.
   function highlightGoalFrame(goalIndex) {
     const frames = document.querySelectorAll('#simulator-column .simulation-frame');
-    const frame  = frames[goalIndex];
+    const frame = frames[goalIndex];
     if (!frame) return;
     // Scroll the frame into view inside the simulator column
     frame.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
@@ -627,7 +646,7 @@
 
   // Perform one step: find a matching goal and update robots.
   function nextStep() {
-    const btn  = document.getElementById('next-step-btn');
+    const btn = document.getElementById('next-step-btn');
     const info = document.getElementById('next-step-info');
 
     if (animating) {
@@ -770,20 +789,49 @@
   function colsToBounds(n) {
     const half = Math.floor(n / 2);
     return n % 2 === 1
-      ? { min: -half,      max: half      }   // odd: symmetric
-      : { min: -half,      max: half - 1  };  // even: one extra on negative side
+      ? { min: -half, max: half }   // odd: symmetric
+      : { min: -half, max: half - 1 };  // even: one extra on negative side
   }
 
   function computeGridSizes() {
-    const vis      = parseInt(document.getElementById('visibility_range')?.value) ||
-                     parseInt(document.getElementById('visibility-display')?.textContent) ||
-                     (typeof defaultVisibility  !== 'undefined' ? defaultVisibility  : 1);
-    const nRobots  = typeof defaultNumRobots !== 'undefined' ? defaultNumRobots : 3;
+    // Read directly from the grids_to_test textarea if it exists on the page
+    try {
+      const gridsInput = document.getElementById("grids_to_test");
+      if (gridsInput && gridsInput.value.trim()) {
+        const grids = JSON.parse(gridsInput.value.trim());
+        let parsedGrids = grids;
+        if (Array.isArray(grids) && grids.length === 2 && typeof grids[0] === 'number') {
+           parsedGrids = [grids];
+        }
+        
+        if (Array.isArray(parsedGrids) && parsedGrids.length > 0) {
+          return parsedGrids.map(([cols, rows]) => {
+            const finalCols = cols + 2;
+            const finalRows = rows + 2;
+            const xb = colsToBounds(finalCols);
+            const yb = colsToBounds(finalRows);
+            return { 
+              displayCols: cols, displayRows: rows, 
+              cols: finalCols, rows: finalRows, 
+              xmin: xb.min, xmax: xb.max, ymin: yb.min, ymax: yb.max 
+            };
+          });
+        }
+      }
+    } catch(e) {
+      console.warn("Failed to parse grids_to_test for master grid, falling back to dynamic sizing", e);
+    }
+
+    // Fallback dynamic sizing
+    const vis = parseInt(document.getElementById('visibility_range')?.value) ||
+      parseInt(document.getElementById('visibility-display')?.textContent) ||
+      (typeof defaultVisibility !== 'undefined' ? defaultVisibility : 1);
+    const nRobots = typeof defaultNumRobots !== 'undefined' ? defaultNumRobots : 3;
     const B = vis * (nRobots + 1) + 3;
     return [
-      [B,   B  ], [B,   B+1], [B,   B+2],
-      [B+1, B  ], [B+1, B+1], [B+1, B+2],
-      [B+2, B  ], [B+2, B+1],
+      [B, B], [B, B + 1], [B, B + 2],
+      [B + 1, B], [B + 1, B + 1], [B + 1, B + 2],
+      [B + 2, B], [B + 2, B + 1],
     ].map(([cols, rows]) => {
       const xb = colsToBounds(cols);
       const yb = colsToBounds(rows);
@@ -808,7 +856,9 @@
     sizes.forEach((s, i) => {
       const opt = document.createElement('option');
       opt.value = i;
-      opt.textContent = `${s.cols}×${s.rows}  [${s.xmin}→${s.xmax}] [${s.ymin}→${s.ymax}]`;
+      const textCols = s.displayCols || s.cols;
+      const textRows = s.displayRows || s.rows;
+      opt.textContent = `${textCols}×${textRows}  [${s.xmin}→${s.xmax}] [${s.ymin}→${s.ymax}]`;
       sel.appendChild(opt);
     });
     // Separator
@@ -819,7 +869,7 @@
     // Manual preset: -6→6, -6→6
     const preset = document.createElement('option');
     preset.value = 'preset-6';
-    preset.textContent = '13×13  [-6→6] [-6→6]';
+    preset.textContent = '11×11  [-6→6] [-6→6]';
     sel.appendChild(preset);
     // Restore previous selection if valid, otherwise default to last computed size
     const restored = parseInt(prevVal);
@@ -866,7 +916,7 @@
     if (trajectories.length === 0) return [];
     const path = trajectories.map(t => t.goalIndex);
     const seen = new Set();
-    const out  = [];
+    const out = [];
     for (let i = 0; i < path.length - 1; i++) {
       const key = `${path[i]}-${path[i + 1]}`;
       if (!seen.has(key)) {
@@ -892,14 +942,14 @@
   }
 
   function _curvedArrow(ctx, x1, y1, x2, y2, nodeR, bend, color, lw) {
-    const dx = x2-x1, dy = y2-y1;
-    const dist = Math.sqrt(dx*dx+dy*dy);
+    const dx = x2 - x1, dy = y2 - y1;
+    const dist = Math.sqrt(dx * dx + dy * dy);
     if (dist < 1) return;
-    const ux = dx/dist, uy = dy/dist;
+    const ux = dx / dist, uy = dy / dist;
     const px = -uy, py = ux;                    // perpendicular (left)
-    const sx = x1 + ux*nodeR, sy = y1 + uy*nodeR; // start on circle edge
-    const ex = x2 - ux*nodeR, ey = y2 - uy*nodeR; // end on circle edge
-    const mx = (sx+ex)/2 + px*bend, my = (sy+ey)/2 + py*bend; // control point
+    const sx = x1 + ux * nodeR, sy = y1 + uy * nodeR; // start on circle edge
+    const ex = x2 - ux * nodeR, ey = y2 - uy * nodeR; // end on circle edge
+    const mx = (sx + ex) / 2 + px * bend, my = (sy + ey) / 2 + py * bend; // control point
     ctx.save();
     ctx.strokeStyle = color; ctx.lineWidth = lw;
     ctx.beginPath(); ctx.moveTo(sx, sy); ctx.quadraticCurveTo(mx, my, ex, ey); ctx.stroke();
@@ -919,7 +969,7 @@
       ctx.clearRect(0, 0, canvas.width, canvas.height);
       ctx.fillStyle = '#999'; ctx.font = '11px Arial';
       ctx.textAlign = 'center'; ctx.textBaseline = 'middle';
-      ctx.fillText('No goals loaded', canvas.width/2, canvas.height/2);
+      ctx.fillText('No goals loaded', canvas.width / 2, canvas.height / 2);
       return;
     }
 
@@ -942,12 +992,12 @@
     const circleR = Math.min(W, H) / 2 - pad;
 
     // Place nodes evenly on a circle, starting from the top (-π/2)
-    const nodes = Array.from({length: N}, (_, i) => {
-      if (N === 1) return { x: W/2, y: H/2, angle: -Math.PI/2 };
+    const nodes = Array.from({ length: N }, (_, i) => {
+      if (N === 1) return { x: W / 2, y: H / 2, angle: -Math.PI / 2 };
       const angle = -Math.PI / 2 + (2 * Math.PI * i) / N;
       return {
-        x: W/2 + circleR * Math.cos(angle),
-        y: H/2 + circleR * Math.sin(angle),
+        x: W / 2 + circleR * Math.cos(angle),
+        y: H / 2 + circleR * Math.sin(angle),
         angle
       };
     });
@@ -956,7 +1006,7 @@
     const bidir = new Set();
     transitions.forEach(t => {
       if (t.from !== t.to && transitions.some(u => u.from === t.to && u.to === t.from))
-        bidir.add(`${Math.min(t.from,t.to)}-${Math.max(t.from,t.to)}`);
+        bidir.add(`${Math.min(t.from, t.to)}-${Math.max(t.from, t.to)}`);
     });
 
     // Draw edges first (under nodes)
@@ -977,11 +1027,11 @@
         ctx.beginPath();
         ctx.arc(lx, ly, loopR, 0.3, Math.PI * 2 - 0.3, false);
         ctx.stroke();
-        _arrowHead(ctx, lx + Math.sin(0.3)*loopR, ly + loopR*Math.cos(0.3)*0.1 + loopR*0.95,
-          Math.PI*0.5 + 0.3, 7, color);
+        _arrowHead(ctx, lx + Math.sin(0.3) * loopR, ly + loopR * Math.cos(0.3) * 0.1 + loopR * 0.95,
+          Math.PI * 0.5 + 0.3, 7, color);
         ctx.restore();
       } else {
-        const key = `${Math.min(from,to)}-${Math.max(from,to)}`;
+        const key = `${Math.min(from, to)}-${Math.max(from, to)}`;
         const bend = bidir.has(key)
           ? (from < to ? -R * 1.6 : R * 1.6)
           : -R * 0.5;
@@ -995,7 +1045,7 @@
     // Draw nodes on top
     for (let i = 0; i < N; i++) {
       const { x, y } = nodes[i];
-      const isActive  = i === activeGoalIdx;
+      const isActive = i === activeGoalIdx;
       const isVisited = visitedGoals.has(i);
       const color = TRAIL_COLORS[i % TRAIL_COLORS.length];
       ctx.beginPath(); ctx.arc(x, y, R, 0, Math.PI * 2);
@@ -1006,7 +1056,7 @@
       ctx.fillStyle = isActive ? '#fff' : (isVisited ? color : '#bbb');
       ctx.font = `bold ${Math.max(8, R - 2)}px Inter, Arial, sans-serif`;
       ctx.textAlign = 'center'; ctx.textBaseline = 'middle';
-      ctx.fillText(`G${i+1}`, x, y);
+      ctx.fillText(`G${i + 1}`, x, y);
     }
   }
 
@@ -1127,13 +1177,13 @@
       // Block only if focus is on a text-entry field that is NOT inside the movement column
       const movementCol = document.getElementById('movement-column');
       const focused = document.activeElement;
-      const isTextEntry = ['INPUT','TEXTAREA'].includes(focused?.tagName) &&
-                          focused?.type !== 'checkbox' && focused?.type !== 'radio';
+      const isTextEntry = ['INPUT', 'TEXTAREA'].includes(focused?.tagName) &&
+        focused?.type !== 'checkbox' && focused?.type !== 'radio';
       const insidePanel = movementCol && movementCol.contains(focused);
       if (isTextEntry && !insidePanel) return;
-      if (e.code === 'Space')           { e.preventDefault(); togglePlay(); }
+      if (e.code === 'Space') { e.preventDefault(); togglePlay(); }
       else if (e.code === 'ArrowRight') { e.preventDefault(); stopPlay(); nextStep(); }
-      else if (e.code === 'ArrowLeft')  { e.preventDefault(); stopPlay(); prevStep(); }
+      else if (e.code === 'ArrowLeft') { e.preventDefault(); stopPlay(); prevStep(); }
     });
   }
 
@@ -1145,6 +1195,6 @@
   }
 
   // --- Public API ---
-  window.initMovementGrid          = init;
+  window.initMovementGrid = init;
   window.refreshMovementGoalSelect = populateGoalSelect;
 })();
