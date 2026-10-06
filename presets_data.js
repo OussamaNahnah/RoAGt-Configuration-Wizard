@@ -757,7 +757,7 @@ const exec_2r_3c_v1_4 = {
   ]
 };
 
-const exec_2r_3c_v1_12 = {
+const exec_2r_3c_v1_13 = {
   "number_of_robots": 2,
   "number_of_colors": 3,
   "visibility_range": 1,
@@ -1518,7 +1518,7 @@ const exec_3r_1c_v2_2 = {
     }
   ]
 };
-const exec_2r_3c_v1_13 = {
+const exec_2r_3c_v1_14 = {
   "number_of_robots": 2,
   "number_of_colors": 3,
   "visibility_range": 1,
@@ -1734,7 +1734,7 @@ const exec_2r_3c_v1_10 = {
   ]
 };
 
-const exec_2r_3c_v1_14 = {
+const exec_2r_3c_v1_15 = {
   "number_of_robots": 2,
   "number_of_colors": 3,
   "visibility_range": 1,
@@ -1829,7 +1829,7 @@ const exec_2r_3c_v1_14 = {
     }
   ]
 };
-const exec_2r_3c_v1_15 = {
+const exec_2r_3c_v1_16 = {
   "number_of_robots": 2,
   "number_of_colors": 3,
   "visibility_range": 1,
@@ -1984,6 +1984,66 @@ const exec_2r_3c_v1_11 = {
   ]
 };
 
+const exec_2r_3c_v1_12 = {
+  "number_of_robots": 2,
+  "number_of_colors": 3,
+  "visibility_range": 1,
+  "all_color_letters": [
+    ["F", 255],
+    ["L", 16711680],
+    ["R", 32768]
+  ],
+  "opacity": false,
+  "generation_mode": {
+    "ProgressiveValidationByLevels": 0
+  },
+  "grids_to_test": [[7, 7]],
+  "goals": [
+    {
+      "initial_positions": [["L", 0, 0], ["F", -1, 0]],
+      "targets": [[1, [["L", 1, 0], ["F", 0, 0]], [], []]],
+      "boundary": [-2, 2, -1, 1],
+      "wall": [null, null]
+    },
+    {
+      "initial_positions": [["F", 0, 0], ["L", 1, 0]],
+      "targets": [[3, [["F", 0, 0], ["R", -1, 0]], [], []]],
+      "boundary": [-2, 3, -1, 2],
+      "wall": [2, null]
+    },
+    {
+      "initial_positions": [["R", 0, 0], ["F", -1, 0]],
+      "targets": [[1, [["R", 1, 0], ["F", 0, 0]], [], []]],
+      "boundary": [-2, 2, -1, 1],
+      "wall": [null, null]
+    },
+    {
+      "initial_positions": [["R", 0, 0], ["F", -1, 0]],
+      "targets": [[3, [["F", -1, 1], ["L", -2, 1]], [], []]],
+      "boundary": [-3, 2, -1, 2],
+      "wall": [1, null]
+    },
+    {
+      "initial_positions": [["R", -1, 0], ["F", 0, 0]],
+      "targets": [[3, [["L", 1, -1], ["F", 0, -1]], [], []]],
+      "boundary": [-3, 2, -3, 1],
+      "wall": [-2, -2]
+    },
+    {
+      "initial_positions": [["L", 0, -1], ["F", -1, -1]],
+      "targets": [[1, [["L", 1, -1], ["F", 0, -1]], [], []]],
+      "boundary": [-2, 2, -3, 0],
+      "wall": [null, -2]
+    },
+    {
+      "initial_positions": [["L", 0, -1], ["F", -1, -1]],
+      "targets": [[4, [["F", -2, 1], ["R", -1, 1]], [], []]],
+      "boundary": [-3, 2, -3, 2],
+      "wall": [1, -2]
+    }
+  ]
+};
+
 const algorithmPresets = [
   // ═══════════════════════════════════════════════════
   //  2r-3c-v1 (2 robots · 3 colors · visibility 1)
@@ -2046,24 +2106,29 @@ const algorithmPresets = [
     data: exec_2r_3c_v1_11
   },
   {
-    title: "2R-3C-V1 | Ex12 ⚠️ BAD V1 + 2steps",
-    description: "⚠️ BAD — Go line, return next line (horizontal robots format).",
+    title: "2R-3C-V1 | Ex12 (EX07.1) ",
+    description: "A new experiment with a different approach.",
     data: exec_2r_3c_v1_12
   },
   {
-    title: "2R-3C-V1 | Ex13 ⚠️ BAD V1 +3steps",
-    description: "⚠️ BAD — A new experiment with a different approach.",
+    title: "2R-3C-V1 | Ex13 ⚠️ BAD V1 + 2steps",
+    description: "⚠️ BAD — Go line, return next line (horizontal robots format).",
     data: exec_2r_3c_v1_13
   },
   {
-    title: "2R-3C-V1 | Ex14 ⚠️ BAD V2 + 2steps",
+    title: "2R-3C-V1 | Ex14 ⚠️ BAD V1 +3steps",
     description: "⚠️ BAD — A new experiment with a different approach.",
     data: exec_2r_3c_v1_14
   },
   {
-    title: "2R-3C-V1 | Ex15 ⚠️ BAD V2 + 3steps",
+    title: "2R-3C-V1 | Ex15 ⚠️ BAD V2 + 2steps",
     description: "⚠️ BAD — A new experiment with a different approach.",
     data: exec_2r_3c_v1_15
+  },
+  {
+    title: "2R-3C-V1 | Ex16 ⚠️ BAD V2 + 3steps",
+    description: "⚠️ BAD — A new experiment with a different approach.",
+    data: exec_2r_3c_v1_16
   },
 
   // ═══════════════════════════════════════════════════
