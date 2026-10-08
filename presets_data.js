@@ -2097,90 +2097,90 @@ const algorithmPresets = [
   //  2r-3c-v1 (2 robots · 3 colors · visibility 1)
   // ═══════════════════════════════════════════════════
   {
-    title: "2R-3C-V1 | Ex01 ★ Algo1",
-    description: "Go on a line, return on next line (base paper → Algo1).",
+    title: "2R-3C-V1 | Ex A1 ★ Algo1",
+    description: "Go on a line, return on next line (horizontal sweep pattern; base paper → Algo1).",
     data: exec_2r_3c_v1_1
   },
   {
-    title: "2R-3C-V1 | Ex02",
-    description: "like {2R-3C-V1 | Ex01 ★ Algo1} strategy but with different moving patterns.",
+    title: "2R-3C-V1 | Ex A2",
+    description: "Go on a line, return on next line (vertical sweep pattern variant of Ex A1).",
     data: exec_2r_3c_v1_2
   },
   {
-    title: "2R-3C-V1 | Ex03",
-    description: "Return same line, horizontal turn at 5th corner.",
+    title: "2R-3C-V1 | Ex A3",
+    description: "Sweep and return on same line; Group 4: vertical realignment at corners.",
     data: exec_2r_3c_v1_3
   },
 
   {
-    title: "2R-3C-V1 | Ex04",
-    description: "Return same line, horizontal turn at corner.",
+    title: "2R-3C-V1 | Ex A4",
+    description: "Sweep and return on same line; Group 3: sweeps top wall line (goals 12-16) then vertical realignment.",
     data: exec_2r_3c_v1_4
   },
   {
-    title: "2R-3C-V1 | Ex05 (Ex04.1)",
-    description: "A variation of Ex04 with a different approach.",
+    title: "2R-3C-V1 | Ex A5 (Ex A4.1)",
+    description: "Sweep and return on same line; Group 3: split corner transitions into 2 intermediate goals.",
     data: exec_2r_3c_v1_5
   },
   {
-    title: "2R-3C-V1 | Ex06",
-    description: "A new experiment with a different approach.",
+    title: "2R-3C-V1 | Ex A6",
+    description: "Sweep and return on same line; Group 2: vertical realignment alternating sweep axes at corners.",
     data: exec_2r_3c_v1_6
   },
   {
-    title: "2R-3C-V1 | Ex07",
-    description: "A different experiment with a unique approach.",
+    title: "2R-3C-V1 | Ex A7",
+    description: "Sweep and return on same line; Group 1: horizontal realignment keeping sweep on same axis.",
     data: exec_2r_3c_v1_7
   },
 
   {
-    title: "2R-3C-V1 | Ex08 (Ex03.1)",
-    description: "Return next line at 1st corner.",
+    title: "2R-3C-V1 | Ex A8 (Ex A3.1)",
+    description: "Sweep and return on same line; Group 4: like Ex A3 but returns on next line at distance 2 wall sweep.",
     data: exec_2r_3c_v1_8
   },
   {
-    title: "2R-3C-V1 | Ex09 (Ex04.1)",
-    description: "Ex04+Ex07",
+    title: "2R-3C-V1 | Ex A9 (Ex A4.1)",
+    description: "Sweep and return on same line; Group 3: like Ex A4 but returns on next line at bottom wall.",
     data: exec_2r_3c_v1_9
   },
   {
-    title: "2R-3C-V1 | Ex10 (Ex05.1)",
-    description: "A new experiment with a different approach.",
+    title: "2R-3C-V1 | Ex A10 (Ex A5.1)",
+    description: "Sweep and return on same line; Group 3 reference: vertical alignment alternating axes.",
     data: exec_2r_3c_v1_10
   },
   {
-    title: "2R-3C-V1 | Ex11 | Ressort",
-    description: "A new experiment with a different approach.",
+    title: "2R-3C-V1 | Ex A11 | Ressort",
+    description: "Spring-like sweep pattern (jump 2 lines, return 1 back) along the same axis.",
     data: exec_2r_3c_v1_11
   },
   {
-    title: "2R-3C-V1 | Ex12 (EX07.1) ",
-    description: "A new experiment with a different approach.",
+    title: "2R-3C-V1 | Ex A12 (Ex A7.1) ",
+    description: "Variation of Ex A7 with modified color states at goal 7 (F, R instead of L, F).",
     data: exec_2r_3c_v1_12
   },
   {
-    title: "2R-3C-V1 | Ex13 | Double Ressort",
-    description: "A new experiment with a different approach.",
+    title: "2R-3C-V1 | Ex A13 | Double Ressort",
+    description: "Spring-like sweep pattern alternating axes (vertical/horizontal) at each corner.",
     data: exec_2r_3c_v1_13
   },
   {
-    title: "2R-3C-V1 | Ex14 ⚠️ BAD V1 + 2steps",
-    description: "⚠️ BAD — Go line, return next line (horizontal robots format).",
+    title: "2R-3C-V1 | Ex A14 ⚠️ BAD V1 + 2steps",
+    description: "⚠️ BAD — Go line, return next line (horizontal robots format; cyclic, does not complete exploration).",
     data: exec_2r_3c_v1_14
   },
   {
-    title: "2R-3C-V1 | Ex15 ⚠️ BAD V1 +3steps",
-    description: "⚠️ BAD — A new experiment with a different approach.",
+    title: "2R-3C-V1 | Ex A15 ⚠️ BAD V1 +3steps",
+    description: "⚠️ BAD — Go line, return next line (version 1 with 3 extra steps; cyclic, does not complete exploration).",
     data: exec_2r_3c_v1_15
   },
   {
-    title: "2R-3C-V1 | Ex16 ⚠️ BAD V2 + 2steps",
-    description: "⚠️ BAD — A new experiment with a different approach.",
+    title: "2R-3C-V1 | Ex A16 ⚠️ BAD V2 + 2steps",
+    description: "⚠️ BAD — Version 2 with 2 extra steps (cyclic, does not complete exploration).",
     data: exec_2r_3c_v1_16
   },
   {
-    title: "2R-3C-V1 | Ex17 ⚠️ BAD V2 + 3steps",
-    description: "⚠️ BAD — A new experiment with a different approach.",
+    title: "2R-3C-V1 | Ex A17 ⚠️ BAD V2 + 3steps",
+    description: "⚠️ BAD — Version 2 with 3 extra steps (cyclic, does not complete exploration).",
     data: exec_2r_3c_v1_17
   },
 
@@ -2188,18 +2188,18 @@ const algorithmPresets = [
   //  2r-2c-v2 (2 robots · 2 colors · visibility 2)
   // ═══════════════════════════════════════════════════
   /*{
-    title: "2R-2C-V2 | Ex01 ★ Algo2",
+    title: "2R-2C-V2 | Ex B1 ★ Algo2",
     description: "Go on a line, return on next line (base paper → Algo2).",
     data: exec_2r_2c_v2_1
   },*/
   {
-    title: "2R-2C-V2 | Ex01 ★ Algo2",
-    description: "Same as Ex01 but with complex goals.",
+    title: "2R-2C-V2 | Ex B1 ★ Algo2",
+    description: "Horizontal sweep, go on line, return next line with complex goals (base paper → Algo2).",
     data: exec_2r_2c_v2_2
   },
   {
-    title: "2R-2C-V2 | Ex02",
-    description: "vertical robots pattern, go on a line, return on next line",
+    title: "2R-2C-V2 | Ex B2",
+    description: "Vertical sweep pattern, go on a line, return on next line (extended visibility variant).",
     data: exec_2r_2c_v2_3
   },
 
@@ -2207,13 +2207,13 @@ const algorithmPresets = [
   //  3r-1c-v2 (3 robots · 1 color · visibility 2)
   // ═══════════════════════════════════════════════════
   {
-    title: "3R-1C-V2 | Ex01 ★ Algo3",
-    description: "Go on a line, return on next line (base paper → Algo3).",
+    title: "3R-1C-V2 | Ex C1 ★ Algo3",
+    description: "Go on a line, return on next line with 3 robots (base paper → Algo3).",
     data: exec_3r_1c_v2_1
   },
   {
-    title: "3R-1C-V2 | Ex02",
-    description: "A different experiment with a unique approach.",
+    title: "3R-1C-V2 | Ex C2",
+    description: "Sweep central line and return on same line with 3 robots.",
     data: exec_3r_1c_v2_2
   }
 ];
