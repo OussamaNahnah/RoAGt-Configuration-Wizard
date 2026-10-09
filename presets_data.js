@@ -7,7 +7,7 @@ const exec_2r_3c_v1_1 = {
     ["L", 16711680],
     ["R", 32768]
   ],
-  "opacity": false,
+  "opacity": true,
   "generation_mode": {
     "ProgressiveValidationByLevels": 0
   },
@@ -453,7 +453,7 @@ const exec_2r_3c_v1_3 = {
     ["L", 16711680],
     ["R", 32768]
   ],
-  "opacity": false,
+  "opacity": true,
   "generation_mode": {
     "ProgressiveValidationByLevels": 0
   },
@@ -555,7 +555,7 @@ const exec_2r_3c_v1_8 = {
     ["L", 16711680],
     ["R", 32768]
   ],
-  "opacity": false,
+  "opacity": true,
   "generation_mode": {
     "ProgressiveValidationByLevels": 0
   },
@@ -646,7 +646,7 @@ const exec_2r_3c_v1_4 = {
     ["L", 16711680],
     ["R", 32768]
   ],
-  "opacity": false,
+  "opacity": true,
   "generation_mode": {
     "ProgressiveValidationByLevels": 0
   },
@@ -760,7 +760,7 @@ const exec_2r_3c_v1_14 = {
     ["L", 16711680],
     ["R", 32768]
   ],
-  "opacity": false,
+  "opacity": true,
   "generation_mode": {
     "ProgressiveValidationByLevels": 0
   },
@@ -880,7 +880,7 @@ const exec_2r_3c_v1_2 = {
     ["L", 16711680],
     ["R", 32768]
   ],
-  "opacity": false,
+  "opacity": true,
   "generation_mode": {
     "ProgressiveValidationByLevels": 0
   },
@@ -1047,7 +1047,7 @@ const exec_2r_3c_v1_9 = {
     ["L", 16711680],
     ["R", 32768]
   ],
-  "opacity": false,
+  "opacity": true,
   "generation_mode": {
     "ProgressiveValidationByLevels": 0
   },
@@ -1148,7 +1148,7 @@ const exec10_unused={
     ["L", 16711680],
     ["R", 32768]
   ],
-  "opacity": false,
+  "opacity": true,
   "generation_mode": {
     "ProgressiveValidationByLevels": 0
   },
@@ -1220,7 +1220,7 @@ const exec_2r_3c_v1_6 = {
     ["L", 16711680],
     ["R", 32768]
   ],
-  "opacity": false,
+  "opacity": true,
   "generation_mode": {
     "ProgressiveValidationByLevels": 0
   },
@@ -1292,7 +1292,7 @@ const exec_2r_3c_v1_7 = {
     ["L", 16711680],
     ["R", 32768]
   ],
-  "opacity": false,
+  "opacity": true,
   "generation_mode": {
     "ProgressiveValidationByLevels": 0
   },
@@ -1351,7 +1351,7 @@ const exec_2r_3c_v1_5 = {
     ["L", 16711680],
     ["R", 32768]
   ],
-  "opacity": false,
+  "opacity": true,
   "generation_mode": {
     "ProgressiveValidationByLevels": 0
   },
@@ -1515,7 +1515,7 @@ const exec_2r_3c_v1_15 = {
     ["L", 16711680],
     ["R", 32768]
   ],
-  "opacity": false,
+  "opacity": true,
   "generation_mode": {
     "ProgressiveValidationByLevels": 0
   },
@@ -1635,7 +1635,7 @@ const exec_2r_3c_v1_10 = {
     ["L", 16711680],
     ["R", 32768]
   ],
-  "opacity": false,
+  "opacity": true,
   "generation_mode": {
     "ProgressiveValidationByLevels": 0
   },
@@ -1731,7 +1731,7 @@ const exec_2r_3c_v1_16 = {
     ["L", 16711680],
     ["R", 32768]
   ],
-  "opacity": false,
+  "opacity": true,
   "generation_mode": {
     "ProgressiveValidationByLevels": 0
   },
@@ -1826,7 +1826,7 @@ const exec_2r_3c_v1_17 = {
     ["L", 16711680],
     ["R", 32768]
   ],
-  "opacity": false,
+  "opacity": true,
   "generation_mode": {
     "ProgressiveValidationByLevels": 0
   },
@@ -1921,7 +1921,7 @@ const exec_2r_3c_v1_11 = {
     ["L", 16711680],
     ["R", 32768]
   ],
-  "opacity": false,
+  "opacity": true,
   "generation_mode": {
     "ProgressiveValidationByLevels": 0
   },
@@ -1981,7 +1981,7 @@ const exec_2r_3c_v1_12 = {
     ["L", 16711680],
     ["R", 32768]
   ],
-  "opacity": false,
+  "opacity": true,
   "generation_mode": {
     "ProgressiveValidationByLevels": 0
   },
@@ -2041,7 +2041,7 @@ const exec_2r_3c_v1_13 = {
     ["L", 16711680],
     ["R", 32768]
   ],
-  "opacity": false,
+  "opacity": true,
   "generation_mode": {
     "ProgressiveValidationByLevels": 0
   },
