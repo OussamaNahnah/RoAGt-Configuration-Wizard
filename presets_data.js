@@ -201,6 +201,132 @@ const exec_2r_2c_v2_2 = {
   ]
 };
 
+
+const exec_2r_2c_v2_4 = {
+  "number_of_robots": 2,
+  "number_of_colors": 2,
+  "visibility_range": 2,
+  "all_color_letters": [
+    ["F", 255],
+    ["L", 16711680]
+  ],
+  "opacity": false,
+  "generation_mode": {
+    "ProgressiveValidationByLevels": 0
+  },
+  "grids_to_test": [[13, 13]],
+  "goals": [
+    {
+      "initial_positions": [["L", 0, 0], ["F", -1, 0]],
+      "targets": [[1, [["F", 0, 0], ["L", 1, 0]], [], []]],
+      "boundary": [-2, 2, -1, 1],
+      "wall": [null, null]
+    },
+    {
+      "initial_positions": [["L", 0, 0], ["F", -2, 0]],
+      "targets": [[1, [["L", 1, 0], ["F", -1, 0]], [], []]],
+      "boundary": [-3, 2, -1, 1],
+      "wall": [null, null]
+    },
+    {
+      "initial_positions": [["L", 0, 0], ["F", -2, 0]],
+      "targets": [[1, [["L", 1, 0], ["F", -1, 0]], [], []]],
+      "boundary": [-3, 2, -1, 1],
+      "wall": [null, -2]
+    },
+    {
+      "initial_positions": [["L", 0, 0], ["F", -1, 0]],
+      "targets": [[1, [["F", 0, 0], ["L", 1, 0]], [], []]],
+      "boundary": [-2, 2, -1, 1],
+      "wall": [null, 2]
+    },
+    {
+      "initial_positions": [["L", 0, 0], ["F", -1, 0]],
+      "targets": [[1, [["L", 1, 0], ["F", 0, 0]], [], []]],
+      "boundary": [-2, 2, -3, 1],
+      "wall": [null, -2]
+    },
+    {
+      "initial_positions": [["F", -1, 0], ["L", 1, 0]],
+      "targets": [[1, [["L", 2, 0], ["F", 0, 0]], [], []]],
+      "boundary": [-2, 3, -2, 1],
+      "wall": [null, -1]
+    },
+    {
+      "initial_positions": [["L", 1, 0], ["F", -1, 0]],
+      "targets": [[1, [["L", 2, 0], ["F", 0, 0]], [], []]],
+      "boundary": [-2, 3, -1, 6],
+      "wall": [null, 2]
+    },
+    {
+      "initial_positions": [["L", 1, 0], ["F", 0, 0]],
+      "targets": [[1, [["L", 2, 0], ["F", 1, 0]], [], []]],
+      "boundary": [-1, 3, -1, 2],
+      "wall": [null, 1]
+    },
+    {
+      "initial_positions": [["L", 0, 1], ["F", 2, 1]],
+      "targets": [[1, [["F", -1, 1], ["F", 1, 1]], [], []], [1, [["L", 1, 0], ["F", -1, 0]], [], []], [2, [["F", 1, 0], ["L", 3, 0]], [], []]],
+      "boundary": [-3, 4, -1, 3],
+      "wall": [-2, 2]
+    },
+    {
+      "initial_positions": [["L", 0, 0], ["F", 1, 0]],
+      "targets": [[1, [["F", -1, 0], ["F", 0, 0]], [], []], [1, [["L", 0, 1], ["F", -1, 1]], [], []], [2, [["L", 2, 1], ["F", 1, 1]], [], []]],
+      "boundary": [-3, 3, -2, 2],
+      "wall": [-2, -1]
+    },
+    {
+      "initial_positions": [["L", 0, 0], ["F", -1, 0]],
+      "targets": [[2, [["F", 1, 0], ["L", 1, 1]], [], [["*", 1, 0]]], [4, [["F", -1, 1], ["L", -3, 1]], [["-", -3, 0], ["-", -2, 0], ["-", -1, 0], ["-", 0, 0]], [["*", -1, 1], ["*", 0, 1], ["*", 1, 1]]]],
+      "boundary": [-4, 3, -1, 2],
+      "wall": [2, -2]
+    },
+    {
+      "initial_positions": [["L", 1, 0], ["F", -1, 0]],
+      "targets": [[2, [["L", 2, -1], ["F", 1, 0]], [], [["-", 2, 0]]], [1, [["F", 2, 0], ["L", 1, -1]], [], []], [3, [["F", 0, -1], ["L", -1, -1]], [["-", 0, 0], ["-", -1, 0], ["-", 1, 0]], [["*", 0, -1]]]],
+      "boundary": [-2, 4, -2, 1],
+      "wall": [3, null]
+    },
+    {
+      "initial_positions": [["L", 1, 0], ["F", 0, 0]],
+      "targets": [[2, [["F", 2, 0], ["L", 2, 1]], [], [["*", 2, 0]]], [4, [["F", 0, 1], ["L", -2, 1]], [["-", 1, 0], ["-", 0, 0], ["-", -1, 0], ["-", -2, 0]], [["*", 1, 1], ["*", 0, 1], ["F", 2, 1]]]],
+      "boundary": [-3, 4, -1, 2],
+      "wall": [3, null]
+    },
+    {
+      "initial_positions": [["L", 1, 0], ["F", -1, 0]],
+      "targets": [[2, [["L", 2, -1], ["F", 1, 0]], [], [["-", 2, 0]]], [1, [["F", 2, 0], ["L", 1, -1]], [], []], [3, [["F", 0, -1], ["L", -1, -1]], [["-", 0, 0], ["-", 1, 0], ["-", -1, 0]], [["*", 0, -1]]]],
+      "boundary": [-2, 4, -2, 1],
+      "wall": [3, -3]
+    },
+    {
+      "initial_positions": [["L", 1, 0], ["F", 0, 0]],
+      "targets": [[2, [["F", 2, 0], ["L", 2, 1]], [], [["*", 2, 0]]], [4, [["F", 0, 1], ["L", -2, 1]], [["-", 1, 0], ["-", 0, 0], ["-", -1, 0], ["-", -2, 0]], [["*", 0, 1], ["*", 1, 1], ["F", 2, 1]]]],
+      "boundary": [-3, 4, -1, 2],
+      "wall": [3, 3]
+    },
+    {
+      "initial_positions": [["L", 1, 0], ["F", -1, 0]],
+      "targets": [[2, [["L", 2, -1], ["F", 1, 0]], [], [["-", 2, 0]]], [1, [["F", 2, 0], ["L", 1, -1]], [], []], [3, [["F", 0, -1], ["L", -1, -1]], [["-", 0, 0], ["-", 1, 0], ["-", -1, 0]], [["*", 0, -1]]]],
+      "boundary": [-2, 4, -2, 1],
+      "wall": [3, -2]
+    },
+    {
+      "initial_positions": [["L", 1, 0], ["F", 0, 0]],
+      "targets": [[2, [["F", 2, 0], ["L", 2, 1]], [], [["*", 2, 0]]], [4, [["F", 0, 1], ["L", -2, 1]], [["-", 1, 0], ["-", 0, 0], ["-", -1, 0], ["-", -2, 0]], [["*", 1, 1], ["*", 0, 1], ["F", 2, 1]]]],
+      "boundary": [-3, 4, -1, 2],
+      "wall": [3, 2]
+    },
+    {
+      "initial_positions": [["L", 1, 0], ["F", -1, 0]],
+      "targets": [[2, [["F", 1, 0], ["L", 2, -1]], [], [["-", 2, 0]]], [1, [["L", 1, -1], ["F", 2, 0]], [], []], [3, [["L", -1, -1], ["F", 0, -1]], [["-", -1, 0], ["-", 0, 0], ["-", 1, 0]], [["*", 0, -1]]]],
+      "boundary": [-2, 4, -2, 1],
+      "wall": [3, 2]
+    }
+  ]
+};
+
 const exec_2r_2c_v2_1 = {
   "number_of_robots": 2,
   "number_of_colors": 2,
@@ -334,6 +460,125 @@ const exec_3r_1c_v2_1 = {
     ["L", 16711680]
   ],
   "opacity": true,
+  "generation_mode": {
+    "ProgressiveValidationByLevels": 0
+  },
+  "grids_to_test": [[13, 13]],
+  "goals": [
+    {
+      "initial_positions": [["L", 0, 1], ["L", -1, 0], ["L", 0, -1]],
+      "targets": [[1, [["L", 0, 0], ["L", 1, 1], ["L", 1, -1]], [], []]],
+      "boundary": [-2, 2, -2, 2],
+      "wall": [null, null]
+    },
+    {
+      "initial_positions": [["L", -1, 0], ["L", 0, 1], ["L", 0, -1]],
+      "targets": [[1, [["L", 0, 0], ["L", 1, 1], ["L", 1, -1]], [], []]],
+      "boundary": [-2, 2, -2, 4],
+      "wall": [null, 3]
+    },
+    {
+      "initial_positions": [["L", 0, 1], ["L", -1, 0], ["L", 0, -1]],
+      "targets": [[1, [["L", 0, 0], ["L", 1, 1], ["L", 1, -1]], [], []]],
+      "boundary": [-2, 2, -2, 2],
+      "wall": [null, -3]
+    },
+    {
+      "initial_positions": [["L", 0, 1], ["L", -1, 0], ["L", 0, -1]],
+      "targets": [[1, [["L", 0, 0], ["L", 1, 1], ["L", 1, -1]], [], []]],
+      "boundary": [-2, 2, -2, 2],
+      "wall": [null, 2]
+    },
+    {
+      "initial_positions": [["L", 0, 1], ["L", -1, 0], ["L", 0, -1]],
+      "targets": [[1, [["L", 0, 0], ["L", 1, 1], ["L", 1, -1]], [], []]],
+      "boundary": [-2, 2, -2, 2],
+      "wall": [null, -2]
+    },
+    {
+      "initial_positions": [["L", 0, 1], ["L", -1, 1], ["L", -1, 0]],
+      "targets": [[1, [["L", 0, 0], ["L", 0, 1], ["L", 1, 1]], [], []]],
+      "boundary": [-2, 2, -1, 2],
+      "wall": [null, null]
+    },
+    {
+      "initial_positions": [["L", 0, -1], ["L", 0, 0], ["L", 1, 0]],
+      "targets": [[1, [["L", 2, 0], ["L", 1, 0], ["L", 1, -1]], [], []]],
+      "boundary": [-1, 3, -2, 1],
+      "wall": [null, 2]
+    },
+    {
+      "initial_positions": [["L", 0, 1], ["L", -1, 1], ["L", -1, 0]],
+      "targets": [[1, [["L", 0, 0], ["L", 0, 1], ["L", 1, 1]], [], []]],
+      "boundary": [-2, 2, -3, 2],
+      "wall": [null, -2]
+    },
+    {
+      "initial_positions": [["L", -1, 1], ["L", -1, -1], ["L", -2, 0]],
+      "targets": [[4, [["L", -2, 0], ["L", -2, -1], ["L", -3, -1]], [], [["-", 0, 1], ["-", 0, 0], ["-", 0, -1]]]],
+      "boundary": [-4, 2, -2, 2],
+      "wall": [1, null]
+    },
+    {
+      "initial_positions": [["L", -1, 1], ["L", -1, -1], ["L", -2, 0]],
+      "targets": [[4, [["L", -2, 0], ["L", -2, -1], ["L", -3, -1]], [], [["-", 0, 1], ["-", 0, 0], ["-", 0, -1]]]],
+      "boundary": [-4, 2, -2, 2],
+      "wall": [1, -3]
+    },
+    {
+      "initial_positions": [["L", -1, 1], ["L", -1, -1], ["L", -2, 0]],
+      "targets": [[4, [["L", -2, 0], ["L", -2, -1], ["L", -3, -1]], [], [["-", 0, 1], ["-", 0, 0], ["-", 0, -1]]]],
+      "boundary": [-4, 2, -2, 2],
+      "wall": [1, 3]
+    },
+    {
+      "initial_positions": [["L", -1, 1], ["L", -1, -1], ["L", -2, 0]],
+      "targets": [[4, [["L", -2, 0], ["L", -2, -1], ["L", -3, -1]], [], [["-", 0, 1], ["-", 0, 0], ["-", 0, -1]]]],
+      "boundary": [-4, 2, -2, 2],
+      "wall": [1, 2]
+    },
+    {
+      "initial_positions": [["L", -1, 1], ["L", -1, -1], ["L", -2, 0]],
+      "targets": [[4, [["L", -3, -1], ["L", -3, 1], ["L", -2, 0]], [], [["-", 0, 1], ["-", 0, -1], ["-", 0, 0]]]],
+      "boundary": [-4, 2, -2, 2],
+      "wall": [1, -2]
+    },
+    {
+      "initial_positions": [["L", 0, 0], ["L", 1, 0], ["L", 1, 1]],
+      "targets": [[5, [["L", 2, 1], ["L", 2, -1], ["L", 1, 0]], [["-", -1, 1]], [["-", -1, 0], ["-", -1, -1]]]],
+      "boundary": [-3, 3, -2, 2],
+      "wall": [-2, null]
+    },
+    {
+      "initial_positions": [["L", 0, 0], ["L", 1, 0], ["L", 1, 1]],
+      "targets": [[5, [["L", 2, 1], ["L", 2, -1], ["L", 1, 0]], [["-", -1, 1]], [["-", -1, 0], ["-", -1, -1]]]],
+      "boundary": [-3, 3, -2, 2],
+      "wall": [-2, -3]
+    },
+    {
+      "initial_positions": [["L", 0, 0], ["L", 1, 0], ["L", 1, 1]],
+      "targets": [[5, [["L", 2, 1], ["L", 2, -1], ["L", 1, 0]], [["-", -1, 1]], [["-", -1, 0], ["-", -1, -1]]]],
+      "boundary": [-3, 3, -2, 2],
+      "wall": [-2, -2]
+    },
+    {
+      "initial_positions": [["L", 0, 0], ["L", -1, 0], ["L", -1, -1]],
+      "targets": [[5, [["L", -1, 0], ["L", -2, 1], ["L", -2, -1]], [["-", 1, -1]], [["-", 1, 0], ["-", 1, 1]]]],
+      "boundary": [-3, 3, -3, 2],
+      "wall": [2, -3]
+    }
+  ]
+};
+
+
+const exec_3r_1c_v2_3 = {
+  "number_of_robots": 3,
+  "number_of_colors": 1,
+  "visibility_range": 2,
+  "all_color_letters": [
+    ["L", 16711680]
+  ],
+  "opacity": false,
   "generation_mode": {
     "ProgressiveValidationByLevels": 0
   },
@@ -1038,6 +1283,95 @@ const exec_2r_2c_v2_3 = {
   ]
 };
 
+
+const exec_2r_2c_v2_5 = {
+  "number_of_robots": 2,
+  "number_of_colors": 2,
+  "visibility_range": 2,
+  "all_color_letters": [
+    ["F", 255],
+    ["L", 16711680]
+  ],
+  "opacity": false,
+  "generation_mode": {
+    "ProgressiveValidationByLevels": 0
+  },
+  "grids_to_test": [[13, 13], [12, 12], [11, 11]],
+  "goals": [
+    {
+      "initial_positions": [["L", 0, 1], ["F", 0, 0]],
+      "targets": [[1, [["F", 1, 0], ["L", 1, 1]], [], []]],
+      "boundary": [-1, 2, -1, 3],
+      "wall": [null, null]
+    },
+    {
+      "initial_positions": [["L", 0, 1], ["F", 0, 0]],
+      "targets": [[1, [["L", 1, 1], ["F", 1, 0]], [], []], [3, [["F", -1, 2], ["L", -1, 0]], [["-", 0, 2], ["-", 1, 2]], [["F", 0, 1]]]],
+      "boundary": [-2, 3, -1, 3],
+      "wall": [2, null]
+    },
+    {
+      "initial_positions": [["F", 0, 0], ["L", 0, 2]],
+      "targets": [[1, [["L", 1, 2], ["F", 1, 0]], [], []]],
+      "boundary": [-1, 2, -1, 3],
+      "wall": [null, null]
+    },
+    {
+      "initial_positions": [["F", 0, 2], ["L", 0, 0]],
+      "targets": [[1, [["F", -1, 2], ["L", -1, 0]], [], []], [3, [["L", 1, 2], ["F", 1, 1]], [["-", 0, 0], ["-", 1, 0]], [["F", 0, 1]]]],
+      "boundary": [-3, 2, -1, 3],
+      "wall": [-2, null]
+    },
+    {
+      "initial_positions": [["L", 0, 1], ["F", 0, -1]],
+      "targets": [[1, [["L", 1, 1], ["F", 1, -1]], [], []]],
+      "boundary": [-1, 2, -2, 4],
+      "wall": [null, 3]
+    },
+    {
+      "initial_positions": [["L", 0, 1], ["F", 0, 0]],
+      "targets": [[1, [["L", 1, 1], ["F", 1, 0]], [], []]],
+      "boundary": [-1, 2, -1, 4],
+      "wall": [null, 3]
+    },
+    {
+      "initial_positions": [["L", 0, 1], ["F", 0, -1]],
+      "targets": [[1, [["L", 1, 1], ["F", 1, -1]], [], []]],
+      "boundary": [-1, 2, -4, 2],
+      "wall": [null, -3]
+    },
+    {
+      "initial_positions": [["F", 1, 2], ["L", 1, 0]],
+      "targets": [[1, [["L", 0, 0], ["F", 0, 2]], [], []], [3, [["L", 2, 2], ["F", 2, 1]], [["-", 2, 0], ["-", 1, 0]], [["F", 1, 1]]]],
+      "boundary": [-2, 3, -1, 5],
+      "wall": [-1, 4]
+    },
+    {
+      "initial_positions": [["F", 0, 0], ["L", 0, 1]],
+      "targets": [[1, [["L", 1, 1], ["F", 1, 0]], [], []], [4, [["F", -2, 2], ["L", -1, 1]], [["-", 1, 1]], [["-", 1, 2], ["F", -1, 2]]]],
+      "boundary": [-3, 3, -1, 4],
+      "wall": [2, 3]
+    },
+    {
+      "initial_positions": [["F", 0, 0], ["L", -1, 1]],
+      "targets": [[1, [["F", 1, 0], ["L", 0, 1]], [], []]],
+      "boundary": [-2, 3, -2, 2],
+      "wall": [null, -1]
+    },
+    {
+      "initial_positions": [["F", -1, 1], ["L", 0, 0]],
+      "targets": [[1, [["F", -2, 1], ["L", -1, 0]], [], []], [4, [["L", 0, 0], ["F", 0, -2]], [["-", -2, -2], ["-", -2, -1], ["-", -1, -2], ["-", -1, 1], ["-", 0, 1]], [["*", 0, 0], ["*", -1, 0], ["F", -1, -1], ["F", 0, -1]]]],
+      "boundary": [-4, 1, -3, 3],
+      "wall": [-3, 2]
+    },
+    {
+      "initial_positions": [["L", 0, 1], ["F", 0, -1]],
+      "targets": [[1, [["L", 1, 1], ["F", 1, -1]], [], []], [3, [["L", -1, -1], ["F", -1, 0]], [["-", -1, 1], ["-", 0, 1]], [["F", 0, 0]]]],
+      "boundary": [-2, 3, -2, 4],
+      "wall": [2, 3]
+    }
+  ]
+};
 const exec_2r_3c_v1_9 = {
   "number_of_robots": 2,
   "number_of_colors": 3,
@@ -1433,6 +1767,89 @@ const exec_3r_1c_v2_2 = {
     ["L", 16711680]
   ],
   "opacity": true,
+  "generation_mode": {
+    "ProgressiveValidationByLevels": 0
+  },
+  "grids_to_test": [[13, 13]],
+  "goals": [
+    {
+      "initial_positions": [["L", 0, 0], ["L", -1, 0], ["L", -2, -1]],
+      "targets": [[1, [["L", 0, 0], ["L", 1, 0], ["L", -1, -1]], [], []]],
+      "boundary": [-3, 2, -2, 1],
+      "wall": [null, null]
+    },
+    {
+      "initial_positions": [["L", 0, 1], ["L", 1, 1], ["L", -1, 0]],
+      "targets": [[4, [["L", 0, 1], ["L", 0, 0], ["L", -1, 0]], [], [["-", 2, 0], ["-", 1, 0]]]],
+      "boundary": [-2, 4, -1, 2],
+      "wall": [3, null]
+    },
+    {
+      "initial_positions": [["L", 1, 0], ["L", 1, -1], ["L", 0, -1]],
+      "targets": [[1, [["L", 0, 0], ["L", 0, -1], ["L", -1, -1]], [], []]],
+      "boundary": [-2, 3, -2, 1],
+      "wall": [null, null]
+    },
+    {
+      "initial_positions": [["L", 1, 0], ["L", 2, 0], ["L", 2, 1]],
+      "targets": [[5, [["L", 2, -1], ["L", 3, 0], ["L", 4, 0]], [], [["-", 0, 0]]]],
+      "boundary": [-2, 5, -2, 2],
+      "wall": [-1, null]
+    },
+    {
+      "initial_positions": [["L", 0, 0], ["L", -1, 0], ["L", 0, 1]],
+      "targets": [[5, [["L", 0, -1], ["L", 2, 0], ["L", 1, 0]], [], [["-", -2, 0]]]],
+      "boundary": [-4, 3, -4, 2],
+      "wall": [-3, -3]
+    },
+    {
+      "initial_positions": [["L", 1, 0], ["L", 0, 0], ["L", -1, -1]],
+      "targets": [[1, [["L", 2, 0], ["L", 1, 0], ["L", 0, -1]], [], []]],
+      "boundary": [-2, 3, -4, 2],
+      "wall": [null, -3]
+    },
+    {
+      "initial_positions": [["L", 1, 1], ["L", 0, 1], ["L", -1, 0]],
+      "targets": [[4, [["L", 0, 0], ["L", 0, 1], ["L", -1, 0]], [], [["-", 2, 0], ["-", 1, 0]]]],
+      "boundary": [-2, 4, -3, 2],
+      "wall": [3, -2]
+    },
+    {
+      "initial_positions": [["L", 0, 0], ["L", 1, 0], ["L", 1, 1]],
+      "targets": [[1, [["L", 0, 0], ["L", -1, 0], ["L", 0, 1]], [], []]],
+      "boundary": [-2, 2, -3, 2],
+      "wall": [null, -2]
+    },
+    {
+      "initial_positions": [["L", 1, 0], ["L", 0, 0], ["L", 1, 1]],
+      "targets": [[5, [["L", 1, 0], ["L", 2, 1], ["L", 2, -1]], [], [["-", -1, -1], ["-", -1, 0], ["-", 0, 0], ["-", 0, -1], ["-", 1, -1]]]],
+      "boundary": [-3, 3, -3, 2],
+      "wall": [-2, -2]
+    },
+    {
+      "initial_positions": [["L", 0, -2], ["L", -1, -1], ["L", 0, 0]],
+      "targets": [[1, [["L", 0, -1], ["L", 1, -2], ["L", 1, 0]], [], []]],
+      "boundary": [-2, 2, -4, 1],
+      "wall": [null, -3]
+    },
+    {
+      "initial_positions": [["L", 0, 0], ["L", 1, 1], ["L", 1, -1]],
+      "targets": [[5, [["L", -1, 1], ["L", -1, 2], ["L", 0, 1]], [], [["-", 2, -1]]]],
+      "boundary": [-2, 4, -3, 3],
+      "wall": [3, -2]
+    }
+  ]
+};
+
+
+const exec_3r_1c_v2_4 = {
+  "number_of_robots": 3,
+  "number_of_colors": 1,
+  "visibility_range": 2,
+  "all_color_letters": [
+    ["L", 16711680]
+  ],
+  "opacity": false,
   "generation_mode": {
     "ProgressiveValidationByLevels": 0
   },
@@ -2045,7 +2462,7 @@ const exec_2r_3c_v1_13 = {
   "generation_mode": {
     "ProgressiveValidationByLevels": 0
   },
-  "grids_to_test": [[7,7]],
+  "grids_to_test": [[7, 7]],
   "goals": [
     {
       "initial_positions": [["L", 0, 0], ["F", -1, 0]],
@@ -2073,7 +2490,7 @@ const exec_2r_3c_v1_13 = {
     },
     {
       "initial_positions": [["F", 0, 0], ["L", 1, 0]],
-      "targets": [[4, [["F", 0, 2], ["R", -1, 2]], [], [["-", 1, 2]]]],
+      "targets": [[5, [["R", -1, 0], ["F", -1, 1]], [], [["-", 1, 2]]]],
       "boundary": [-2, 3, -1, 4],
       "wall": [2, 3]
     }
@@ -2190,6 +2607,16 @@ const algorithmPresets = [
     description: "Vertical sweep pattern, go on a line, return on next line (extended visibility variant).",
     data: exec_2r_2c_v2_3
   },
+    {
+    title: "2R-2C-V2 | Ex B3 |transparent robots",
+    description: "Horizontal sweep, go on line, return next line with complex goals (base paper → Algo2).",
+    data: exec_2r_2c_v2_4
+  },
+  {
+    title: "2R-2C-V2 | Ex B4 | trasparent robots",
+    description: "Vertical sweep pattern, go on a line, return on next line (extended visibility variant).",
+    data: exec_2r_2c_v2_5
+  },
 
   // ═══════════════════════════════════════════════════
   //  3r-1c-v2 (3 robots · 1 color · visibility 2)
@@ -2203,5 +2630,14 @@ const algorithmPresets = [
     title: "3R-1C-V2 | Ex C2",
     description: "Sweep central line and return on same line with 3 robots.",
     data: exec_3r_1c_v2_2
+  },  {
+    title: "3R-1C-V2 | Ex C3 | transparent robots",
+    description: "Go on a line, return on next line with 3 robots (base paper → Algo3).",
+    data: exec_3r_1c_v2_3
+  },
+  {
+    title: "3R-1C-V2 | Ex C4 | transparent robots",
+    description: "Sweep central line and return on same line with 3 robots.",
+    data: exec_3r_1c_v2_4
   }
 ];
