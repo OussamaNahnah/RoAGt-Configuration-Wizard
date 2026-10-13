@@ -2598,46 +2598,47 @@ const algorithmPresets = [
     data: exec_2r_2c_v2_1
   },*/
   {
-    title: "2R-2C-V2 | Ex B1 ★ Algo2",
-    description: "Horizontal sweep, go on line, return next line with complex goals (base paper → Algo2).",
-    data: exec_2r_2c_v2_2
-  },
-  {
-    title: "2R-2C-V2 | Ex B2",
-    description: "Vertical sweep pattern, go on a line, return on next line (extended visibility variant).",
-    data: exec_2r_2c_v2_3
-  },
-    {
-    title: "2R-2C-V2 | Ex B3 |transparent robots",
+    title: "2R-2C-V2 | Ex B1 | transparent robots",
     description: "Horizontal sweep, go on line, return next line with complex goals (base paper → Algo2).",
     data: exec_2r_2c_v2_4
   },
   {
-    title: "2R-2C-V2 | Ex B4 | trasparent robots",
+    title: "2R-2C-V2 | Ex B2 ★ Algo2 | opaque robots",
+    description: "Horizontal sweep, go on line, return next line with complex goals (base paper → Algo2).",
+    data: exec_2r_2c_v2_2
+  },
+  {
+    title: "2R-2C-V2 | Ex B3 | transparent robots",
     description: "Vertical sweep pattern, go on a line, return on next line (extended visibility variant).",
     data: exec_2r_2c_v2_5
+  },
+  {
+    title: "2R-2C-V2 | Ex B4 | opaque robots",
+    description: "Vertical sweep pattern, go on a line, return on next line (extended visibility variant).",
+    data: exec_2r_2c_v2_3
   },
 
   // ═══════════════════════════════════════════════════
   //  3r-1c-v2 (3 robots · 1 color · visibility 2)
   // ═══════════════════════════════════════════════════
   {
-    title: "3R-1C-V2 | Ex C1 ★ Algo3",
-    description: "Go on a line, return on next line with 3 robots (base paper → Algo3).",
-    data: exec_3r_1c_v2_1
-  },
-  {
-    title: "3R-1C-V2 | Ex C2",
-    description: "Sweep central line and return on same line with 3 robots.",
-    data: exec_3r_1c_v2_2
-  },  {
-    title: "3R-1C-V2 | Ex C3 | transparent robots",
+    title: "3R-1C-V2 | Ex C1 | transparent robots",
     description: "Go on a line, return on next line with 3 robots (base paper → Algo3).",
     data: exec_3r_1c_v2_3
   },
   {
-    title: "3R-1C-V2 | Ex C4 | transparent robots",
+    title: "3R-1C-V2 | Ex C2 ★ Algo3 | opaque robots",
+    description: "Go on a line, return on next line with 3 robots (base paper → Algo3).",
+    data: exec_3r_1c_v2_1
+  },
+  {
+    title: "3R-1C-V2 | Ex C3 | transparent robots",
     description: "Sweep central line and return on same line with 3 robots.",
     data: exec_3r_1c_v2_4
+  },
+  {
+    title: "3R-1C-V2 | Ex C4 | opaque robots",
+    description: "Sweep central line and return on same line with 3 robots.",
+    data: exec_3r_1c_v2_2
   }
 ];
